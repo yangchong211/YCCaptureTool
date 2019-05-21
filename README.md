@@ -23,9 +23,9 @@
 
 ### 03.如何使用
 - 如何引用
-```
-
-```
+    ```
+    implementation 'cn.yc:YCRedDotViewLib:1.0.2'
+    ```
 - 如下所示
     ```
     //创建红点View
