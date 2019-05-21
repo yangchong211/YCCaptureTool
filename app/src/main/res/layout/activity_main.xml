@@ -12,98 +12,62 @@
         android:id="@+id/tv_1"
         android:layout_margin="10dp"
         android:padding="10dp"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="你好"/>
+        android:text="1.这个是个textView文本控件"/>
 
     <TextView
         android:id="@+id/tv_2"
         android:layout_margin="10dp"
-        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="你好"/>
+        android:background="@color/color_ffe935"
+        android:text="2.这个是个textView文本控件"/>
 
 
     <TextView
         android:id="@+id/tv_3"
         android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-    <TextView
-        android:id="@+id/tv_4"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-    <TextView
-        android:id="@+id/tv_5"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-
-    <TextView
-        android:id="@+id/tv_6"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-
-    <TextView
-        android:id="@+id/tv_7"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-
-    <TextView
-        android:id="@+id/tv_8"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-
-    <TextView
-        android:id="@+id/tv_9"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-    <TextView
-        android:id="@+id/tv_10"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-    <TextView
-        android:id="@+id/tv_11"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-    <TextView
-        android:id="@+id/tv_12"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"/>
-
-    <TextView
-        android:id="@+id/tv_13"
-        android:layout_margin="10dp"
+        android:padding="10dp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="你好"/>
+        android:background="@color/colorPrimaryDark"
+        android:text="3.这个是个textView文本控件"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_view_4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.这个设置在LinearLayout"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+
 
 </LinearLayout>
