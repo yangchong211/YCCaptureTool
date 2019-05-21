@@ -18,7 +18,7 @@
 
 
 ### 02.效果展示
-
+- ![image](https://github.com/yangchong211/YCRedDotView/blob/master/image/red.jpg)
 
 
 ### 03.如何使用
