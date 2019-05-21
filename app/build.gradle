@@ -21,6 +21,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-    implementation project(path: ':YCRedDotViewLib')
+    //implementation project(path: ':YCRedDotViewLib')
+    implementation 'cn.yc:YCRedDotViewLib:1.0.3'
 }
