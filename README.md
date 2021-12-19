@@ -24,7 +24,7 @@
 ### 03.如何使用
 - 如何引用
     ```
-    implementation 'cn.yc:YCRedDotViewLib:1.0.3'
+    implementation 'com.github.yangchong211:YCRedDotView:1.0.4'
     ```
 - 如下所示
     ```
