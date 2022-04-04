@@ -1,11 +1,13 @@
 apply plugin: 'com.android.application'
+apply from: rootProject.projectDir.absolutePath + "/AppGradle/appBuild.gradle"
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion project.ext.androidCompileSdkVersion
+    //buildToolsVersion project.ext.androidBuildToolsVersion
     defaultConfig {
         applicationId "com.ycbjie.ycreddotview"
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion project.ext.androidMinSdkVersion
+        targetSdkVersion project.ext.androidTargetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -19,8 +21,10 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support:design:26.1.0'
+    implementation project.ext.AppDependencies['appcompat']
+    implementation project.ext.AppDependencies['appcompat']
+    implementation project.ext.AppDependencies['appcompat']
     //implementation project(path: ':YCRedDotViewLib')
     implementation 'com.github.yangchong211:YCRedDotView:1.0.4'
+    implementation project(path: ':ComponentLib')
 }
