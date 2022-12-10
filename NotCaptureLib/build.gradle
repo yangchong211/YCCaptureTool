@@ -1,21 +1,27 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply from: rootProject.projectDir.absolutePath + "/yc.gradle"
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     //buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
     defaultConfig {
-        applicationId "com.ycbjie.ycreddotview"
         minSdkVersion rootProject.ext.android["minSdkVersion"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
         versionCode rootProject.ext.android["versionCode"]
         versionName rootProject.ext.android["versionName"]
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -25,12 +31,11 @@ dependencies {
     implementation rootProject.ext.dependencies["annotation"]
     implementation(rootProject.ext.dependencies["okhttp"])
     implementation(rootProject.ext.dependencies["gson"])
-    implementation project(path: ':NotCaptureLib')
     //同上上报库
     implementation 'com.github.yangchong211.YCCommonLib:EventUploadLib:1.4.3'
-    //通用组件接口库
-    implementation 'com.github.yangchong211.YCCommonLib:AppCommonInter:1.4.3'
     //加解密库
     //implementation project(path: ':AppEncryptLib')
     implementation 'com.github.yangchong211.YCCommonLib:AppEncryptLib:1.4.3'
+    //通用组件接口库
+    implementation 'com.github.yangchong211.YCCommonLib:AppCommonInter:1.4.3'
 }

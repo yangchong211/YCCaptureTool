@@ -1,2 +1,2 @@
-include ':app', ':YCRedDotViewLib'
-include ':ComponentLib'
+include ':app'
+include ':NotCaptureLib'

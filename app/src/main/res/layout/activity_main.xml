@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ycbjie.ycreddotview.MainActivity">
+    tools:context="com.yc.toolapp.MainActivity">
 
     <TextView
         android:id="@+id/tv_1"
